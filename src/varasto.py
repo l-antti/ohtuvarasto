@@ -43,6 +43,6 @@ class Varasto:
         return maara
 
     def __str__(self):
-        saldo_str = f"saldo = {self.saldo} "
+        saldo_str = f"saldo = {self.saldo}, "
         tilavuus_str = f"viel tilaa {self.paljonko_mahtuu()}"
-        return saldo_str + ", " + tilavuus_str
+        return saldo_str + tilavuus_str
