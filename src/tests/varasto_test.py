@@ -73,5 +73,5 @@ class TestVarasto(unittest.TestCase):
 
     def test_str_method(self):
         self.varasto.lisaa_varastoon(5)  # Add some items
-        expected_str = f"saldo = 5, vielä tilaa {self.varasto.paljonko_mahtuu()}"
+        expected_str = f"saldo = 5, viel tilaa {self.varasto.paljonko_mahtuu()}"
         self.assertEqual(str(self.varasto), expected_str)

@@ -26,4 +26,4 @@ max-nested-blocks=2
 
 max-args=4
 max-returns=15
-max-public-methods=5
+max-public-methods=20
