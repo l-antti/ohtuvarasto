@@ -20,6 +20,8 @@ class Varasto:
     def paljonko_mahtuu(self):
         return self.tilavuus - self.saldo
 
+
+
     def lisaa_varastoon(self, maara):
         if maara < 0:
             return
@@ -42,4 +44,7 @@ class Varasto:
         return maara
 
     def __str__(self):
-        return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
+        return (
+            f"saldo = {self.saldo}, "
+            f"vielä tilaa {self.paljonko_mahtuu()}"
+        )
